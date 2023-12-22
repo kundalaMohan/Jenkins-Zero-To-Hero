@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'kundalamohan/maven-mohan-abhishek-agent:v1'
+      image 'kundalamohan/java-maven-sonar-argocd-helm-k8s:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
